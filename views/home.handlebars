@@ -1,19 +1,3 @@
 {{> partials/navbar }}
-<div class="container vh-100" id="main">
-       <h1 class="h5">{{> partials/title }}</h1>
-    <hr>
-
-    <div class="row">
-        {{#each dataCard}}
-            <div class="col-md-4">
-                {{> partials/card
-                    titulo = this.title
-                    imagen = this.url
-                    descripcion = this.description
-                }}
-            </div>
-        {{/each}}
-    </div>
-
-</div>
-{{> partials/footer }}
+<h1 class="text-center p-4 mt-4 ">Bienvenido al Mercado Web, seleccione sus productos.</h1>
+{{!-- {{> partial/productos }} --}}
