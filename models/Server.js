@@ -34,8 +34,8 @@ class Server{
     //Se crea la función middleware
     middlewares(){
         this.app.use( express.static('public') );
-        this.app.use('/css', express.static(`${__dirname}/../public/assets/css`));
-        this.app.use('/img', express.static( `${__dirname}/../public/assets/img`));
+        this.app.use('/css', express.static(`${__dirname}/../public/css`));
+        this.app.use('/img', express.static( `${__dirname}/../public/img`));
         // Ruta de CSS para Bootstrap
         this.app.use('/bootstrap', express.static( `${__dirname}/../node_modules/bootstrap/dist/css`));
         this.app.use('/bootstrapjs',express.static(  `${__dirname}/../node_modules/bootstrap/dist/js`  ));
