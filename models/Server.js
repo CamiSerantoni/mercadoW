@@ -39,6 +39,7 @@ class Server{
         // Ruta de CSS para Bootstrap
         this.app.use('/bootstrap', express.static( `${__dirname}/../node_modules/bootstrap/dist/css`));
         this.app.use('/bootstrapjs',express.static(  `${__dirname}/../node_modules/bootstrap/dist/js`  ));
+        this.app.use('/fa', express.static(  `${__dirname}/../node_modules/@fortawesome/fontawesome-free`));
     }
 
     routes(){
