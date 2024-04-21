@@ -1,50 +1,38 @@
-Desafío - Mercado web
-En este desafío validaremos nuestros conocimientos de las sesiones anteriores. Para
-lograrlo, necesitarás aplicar todo lo aprendido en las clases de Handlebars y los motores de
-plantillas, parciales, helpers y de la integración de jQuery y Bootstrap,, utilizando de apoyo el
-archivo Apoyo Desafío - Mercado web.
-Lee todo el documento antes de comenzar el desarrollo grupal, para asegurarte de tener el
-máximo de puntaje y enfocar bien los esfuerzos.
-Descripción
-El Mini Market “Come Sano, Come Fresco Spa” está interesado en contratar un freelancer para
-que desarrolle una aplicación en donde puedan ofrecer y vender sus alimentos de forma
-online en la web. No obstante, por su modelo de negocio han advertido que constantemente
-necesitarán hacer actualizaciones en su presentación, contenido y funcionalidades, por lo que
-se plantea desarrollar un sistema compuesto por parciales para poder abordar los cambios
-de una manera más rápida y cómoda.
-En este desafío deberás construir un servidor con Express que utilice el motor de plantillas
-Handlebars para desarrollar componentes y renderizar variables e iteradores en el template
-del sitio web.
-En el Apoyo Desafío - Mercado web encontrarás las imágenes correspondientes. Siéntete libre
-de crear tu propia interfaz para este desafío si así lo crees conveniente, siempre y cuando
-cumpla con los requisitos funcionales y la temática planteada.
-Las siguientes imágenes representan las interacciones que debe tener el sitio web una vez
-terminado el desafío.
-_ 2
-www.desafiolatam.com
-Imagen 1. Dashboard.
-Fuente: Desafío Latam
-Imagen 2. Ventana modal con productos seleccionados.
-Fuente: Desafío Latam
-Para el control de datos en la aplicación, siéntete libre de ocupar la herramienta que más te
-acomode, por ejemplo: LocalStorage, un arreglo dentro del servidor, un archivo JSON
-gestionado con FileSystem, PostgreSQL con el paquete pg o la que creas conveniente.
-En caso de utilizar PostgreSQL, deberás dejar el archivo correspondiente a la base de datos
-que utilizaste o las sentencias SQL necesarias para crear la base de datos, y la tabla como
-comentarios al final del archivo en donde estés desarrollando el servidor.
-_ 3
-www.desafiolatam.com
-Requerimientos
-1. Crear una ruta raíz que al ser consultada renderice una vista con un parcial
-“Dashboard” enviándole en el render un arreglo con los nombres de los productos. Se
-recomienda que estos coincidan con las imágenes de cada producto. (3 Puntos)
-2. Incluir en la vista un parcial que contenga el menú del sitio web y sea renderizado
-antes del Dashboard. (2 Puntos)
-3. Crear un parcial “producto” que contenga el template correspondiente a la
-presentación de cada producto en el Dashboard y reciba como parámetro el nombre
-del producto. (2 Puntos)
-4. Crear un parcial para la sección principal en donde se renderice un helper con el
-mensaje de bienvenida y se realice una iteración para renderizar un parcial “producto”
-pasándole como argumento el nombre de cada producto. (2 Puntos)
-5. Consumir los códigos fuentes de Bootstrap y jQuery a través de rutas o middlewares
-creados e
+#  Desafío Mercado Web 🍎🛒
+
+Este repositorio contiene el código fuente de la aplicación web desarrollada para el Desafío Mercado Web, realizado como parte de un ejercicio de validación de conocimientos  de Handlebars, motores de plantillas, parciales, helpers, jQuery y Bootstrap.
+
+## Descripción de la solución
+
+El Mini Market "Come Sano, Come Fresco Spa" buscaba contratar un freelancer para desarrollar una aplicación web que les permitiera ofrecer y vender alimentos online. La aplicación resultante se compone de un servidor con Express que utiliza Handlebars como motor de plantillas para renderizar componentes y variables en el sitio web. Se han implementado parciales para abordar los cambios de manera ágil y cómoda, cumpliendo con los requisitos funcionales y la temática planteada.
+
+## Estructura del Proyecto
+
+El proyecto está estructurado de la siguiente manera:
+
+- **/public**: Contiene archivos estáticos como imágenes y estilos CSS
+- **/views**: Contiene los archivos de las vistas de Handlebars, incluyendo parciales y layouts.
+- **/routes**: Contiene los archivos de las rutas.
+- **/models**: Contiene los archivos relacionados con la lógica del modelo.
+  - **server.js**: Archivo responsable de manejar las configuraciones del servidor, definir las rutas y los middleware, y lanzar el servidor para escuchar las solicitudes entrantes.
+- **index.js**: Archivo principal que configura y ejecuta el servidor Express.
+
+## Dependencias 
+
+El proyecto utiliza las siguientes dependencias principales:
+
+- **Express**: Para la creación del servidor web.
+- **Handlebars**: Como motor de plantillas para renderizar las vistas.
+- **Bootstrap**: Para el diseño y estilos del sitio web.
+- **jQuery**: Para la manipulación del DOM y la interactividad del sitio web.
+
+## Requisitos y Configuración 🔩🛠️🧰
+
+Para ejecutar el proyecto localmente, asegúrate de tener instalado Node.js y npm. Luego, sigue estos pasos:
+
+1. Clona este repositorio: `git clone <URL_del_repositorio>`
+2. Accede al directorio del proyecto: `cd <nombre_del_directorio>`
+3. Instala las dependencias del proyecto: `npm install`
+4. Inicia el servidor local: `npm run dev`
+5. Abre tu navegador web y accede a `http://localhost:3000` para ver la aplicación en funcionamiento.
+
