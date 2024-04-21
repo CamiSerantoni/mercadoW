@@ -6,7 +6,7 @@ Este repositorio contiene el código fuente de la aplicación web desarrollada p
 
 El Mini Market "Come Sano, Come Fresco Spa" buscaba contratar un freelancer para desarrollar una aplicación web que les permitiera ofrecer y vender alimentos online. La aplicación resultante se compone de un servidor con Express que utiliza Handlebars como motor de plantillas para renderizar componentes y variables en el sitio web. Se han implementado parciales para abordar los cambios de manera ágil y cómoda, cumpliendo con los requisitos funcionales y la temática planteada.
 
-## Estructura del Proyecto
+## Estructura del Proyecto 🩻
 
 El proyecto está estructurado de la siguiente manera:
 
@@ -17,7 +17,7 @@ El proyecto está estructurado de la siguiente manera:
   - **server.js**: Archivo responsable de manejar las configuraciones del servidor, definir las rutas y los middleware, y lanzar el servidor para escuchar las solicitudes entrantes.
 - **index.js**: Archivo principal que configura y ejecuta el servidor Express.
 
-## Dependencias 
+## Dependencias 🤝
 
 El proyecto utiliza las siguientes dependencias principales:
 
