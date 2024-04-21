@@ -2,7 +2,7 @@
 
 Este repositorio contiene el código fuente de la aplicación web desarrollada para el Desafío Mercado Web, realizado como parte de un ejercicio de validación de conocimientos  de Handlebars, motores de plantillas, parciales, helpers, jQuery y Bootstrap.
 
-## Descripción de la solución
+## Descripción de la solución 💻
 
 El Mini Market "Come Sano, Come Fresco Spa" buscaba contratar un freelancer para desarrollar una aplicación web que les permitiera ofrecer y vender alimentos online. La aplicación resultante se compone de un servidor con Express que utiliza Handlebars como motor de plantillas para renderizar componentes y variables en el sitio web. Se han implementado parciales para abordar los cambios de manera ágil y cómoda, cumpliendo con los requisitos funcionales y la temática planteada.
 
@@ -36,3 +36,8 @@ Para ejecutar el proyecto localmente, asegúrate de tener instalado Node.js y np
 4. Inicia el servidor local: `npm run dev`
 5. Abre tu navegador web y accede a `http://localhost:3000` para ver la aplicación en funcionamiento.
 
+## Integrantes: 
+
+- Ma. Cristina Contreras
+- Lorena Devaud
+- Camila Serantoni 
