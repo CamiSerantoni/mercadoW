@@ -24,7 +24,7 @@ El proyecto utiliza las siguientes dependencias principales:
 - **Express**: Para la creación del servidor web.
 - **Handlebars**: Como motor de plantillas para renderizar las vistas.
 - **Bootstrap**: Para el diseño y estilos del sitio web.
-- **jQuery**: Para la manipulación del DOM y la interactividad del sitio web.
+
 
 ## Requisitos y Configuración 🔩🛠️🧰
 
