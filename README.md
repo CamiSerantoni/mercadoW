@@ -17,7 +17,7 @@ El proyecto está estructurado de la siguiente manera:
   - **server.js**: Archivo responsable de manejar las configuraciones del servidor, definir las rutas y los middleware, y lanzar el servidor para escuchar las solicitudes entrantes.
 - **index.js**: Archivo principal que configura y ejecuta el servidor Express.
 
-## Dependencias 🤝
+## Dependencias 🪢
 
 El proyecto utiliza las siguientes dependencias principales:
 
