@@ -12,7 +12,7 @@ const __filename = fileURLToPath( import.meta.url )
 const __dirname = dirname( __filename )
 
 // IMPORTAMOS NUESTRAS VISTAS
-import vistaHome from '../routes/vistaHome.routes.js';
+
 import vistaProductos  from '../routes/vistaProductos.routes.js';
 
 // Creamos nuestro modelo o clase de servidor
@@ -25,7 +25,7 @@ class Server{
         this.port = process.env.PORT || 8000; //para comunicarse con el .env se usa process y se pone el 8000 como alternativa si no existe el .env
         this.frontEndPaths = { //acá centralizo todas las posibles rutas
             rootHome:'/',
-            rootProductos:'/productos'
+            
         }
         // Iniciamos nuestros metodos middlewares y routes
         this.middlewares();
@@ -43,8 +43,8 @@ class Server{
     }
 
     routes(){
-        this.app.use( this.frontEndPaths.rootHome , vistaHome );
-        this.app.use( this.frontEndPaths.rootProductos, vistaProductos )
+        
+        this.app.use( this.frontEndPaths.rootHome, vistaProductos )//Renderizo vistaProductos en el home
     }
     listen(){// Por donde será escuchado el servidor, se le entrega el puerto y se agrega el callback, qué debe hacer
         this.app.listen( this.port, () => {
@@ -54,7 +54,7 @@ class Server{
     initHandlebar(){
         this.hbs = create({ //con el metodo create se crea la vista de handlebar
             partialsDir:[  // directorio de los parciales, en qué carpeta, por eso ponemos views
-                "views"
+                "views/partials"
             ]
         })
         this.app.engine( "handlebars", this.hbs.engine );//levanta la existencia de la extensión handlebar .hbs
