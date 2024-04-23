@@ -17,7 +17,7 @@ El proyecto está estructurado de la siguiente manera:
   - **server.js**: Archivo responsable de manejar las configuraciones del servidor, definir las rutas y los middleware, y lanzar el servidor para escuchar las solicitudes entrantes.
 - **index.js**: Archivo principal que configura y ejecuta el servidor Express.
 
-## Dependencias 🤝
+## Dependencias 🪢
 
 El proyecto utiliza las siguientes dependencias principales:
 
@@ -36,7 +36,7 @@ Para ejecutar el proyecto localmente, asegúrate de tener instalado Node.js y np
 4. Inicia el servidor local: `npm run dev`
 5. Abre tu navegador web y accede a `http://localhost:3000` para ver la aplicación en funcionamiento.
 
-## Integrantes: 
+## Integrantes: 🤝
 
 - Ma. Cristina Contreras
 - Lorena Devaud
