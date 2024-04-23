@@ -1,16 +1,15 @@
-
-<div class="container  justify-content-center">
-    <div class="row">
-        {{#each productos}}
-            <div class="col-md-4">
-                <div class="card m-3" style="width: 15rem;">
-                    <img src="/img/{{this}}.png" alt="{{this}}">
-                    <div class="card-body text-center">
-                        <h3 class="card-title">{{this}}</h3>
-                        <a href="#" type="button" class="btn btn-outline-success producto" id="{{this}}">Agregar al carrito</a>
-                    </div>
+<div class="row">
+    {{#each productos}}
+        <div class="col-md-4 mb-4">
+            <div class="card m-auto" style="width: 15rem;">
+                <img class="card-img-top rounded" src="/img/{{this}}.png" alt="{{this}}">
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{this}}</h5>
+                    <p class="card-text">Descripción del producto</p>
+                    <p class="card-text">$Precio</p>
+                    <a href="#" type="button" class="btn btn-outline-success producto" id="{{this}}">Agregar al carrito</a>
                 </div>
             </div>
-        {{/each}}
-    </div>
+        </div>
+    {{/each}}
 </div>
